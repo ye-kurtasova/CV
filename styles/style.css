@@ -1,0 +1,766 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e1e1e1;
+}
+
+header {
+    height: 35%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #161b25;
+    color: #ffffff;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+}
+
+.header {
+    /* width: 100%; */
+    display: flex;
+    flex-direction: row;
+}
+
+.candidate-image {
+    width: 48%;
+    height: 100%;
+    display: flex;
+    margin: 0 0 0 6%;
+    background-color: #e7e8e91a;
+}
+
+.candidate-image img {
+    width: 100%;
+    padding: 22% 0 10% 0;
+    margin: 0;
+}
+
+.candidate-personal-info {
+    width: 51%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 5%;
+    margin-right: 27%;
+    padding-bottom: 3%;
+    align-items: flex-start;
+}
+
+.candidate-personal-info .candidate-name {
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    padding-top: 20%
+}
+
+.candidate-personal-info .candidate-name h1 {
+    display: flex;
+    margin: 0;
+    
+    font-size: 61px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.candidate-personal-info .candidate-name h2 {
+    display: flex;
+    font-size: 34px;
+    font-weight: 300;
+    vertical-align: middle;
+    background-color: #e7e8e91a;
+    padding-left: 13px;
+    color: #ffffffb7;
+}
+
+.candidate-personal-info .candidate-contacts {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20%;
+    margin-bottom: 2%;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.candidate-contacts .phone-mail {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+}
+
+.candidate-contacts .adress {
+    display: flex;
+    flex-direction: column;
+    margin-left: 45%;
+}
+
+.candidate-contacts .phone-mail h3 {
+    display: flex;
+    margin-bottom: 5px;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.candidate-contacts .phone-mail p {
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 22px;
+    font-weight: 300;
+    color: blanchedalmond;
+}
+
+.candidate-contacts .adress h3 {
+    display: flex;
+    margin-bottom: 5px;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.candidate-contacts .adress p {
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 22px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: blanchedalmond;
+}
+
+.botton {
+    display: flex;
+    border: 1px solid blanchedalmond;
+    border-radius: 5px;
+    margin-left: 42%;
+    margin-top: -105%;
+    padding: 2% 6%;
+    align-items: flex-end;
+    position: relative;
+}
+
+.botton a {
+    display: flex;
+    text-decoration: none;
+    color: rgb(252, 246, 237);
+}
+
+.botton:hover {
+    background-color: #f8eed2d6;
+    font-weight: 600;
+    color: #161b25;
+    font-weight: 600;
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5;
+    -o-transition: all 0.5;
+    transition: all 0.5;
+}
+
+main {
+    display: flex;
+    background-color: #FFFFFF;
+}
+
+
+.education-hobby {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    margin: 0 0 0 6%;
+    background-color: #f8eed2d6;
+    padding: 2% 2% 0 5%;
+}
+
+.education-hobby h1 {
+    display: flex;
+    font-size: 33px;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #1967bbaf;
+    margin-bottom: 0;
+}
+
+.candidate-education {
+    display: flex;
+    flex-direction: column;
+}
+
+.candidate-education .itvdn {
+    display: flex;
+    flex-direction: column;
+}
+
+.candidate-education .itvdn h3 {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 23px;
+    font-weight: 600;
+    margin-top: 10%;
+    margin-bottom: 0;
+}
+
+.education-hobby p {
+    display: flex;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0 5% 1% 0;
+}
+
+.candidate-education .university {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+}
+
+.candidate-education .university h3 {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 23px;
+    font-weight: 600;
+    margin-top: 10%;
+    margin-bottom: 0;
+}
+
+.candidate-hobby {
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    justify-content: space-between;
+    margin-top: 6%;
+}
+
+.candidate-hobby h1 {
+    display: flex;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #1967bbaf;
+    margin: 5% 0 5% 0;
+}
+
+.candidate-hobby .hobby-birds,
+.hobby-books,
+.hobby-serials {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.candidate-hobby p {
+    display: flex;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 1% 7% 5% 5%;
+}
+
+.candidate-hobby p:hover {
+    color: cornflowerblue;
+    font-weight: 600;
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5;
+    -o-transition: all 0.5;
+    transition: all 0.5;
+}
+
+.candidate-hobby img {
+    width: 12%;
+    display: flex;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.candidate-hobby img:hover {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.candidate-social-media {
+    display: flex;
+    flex-direction: column;
+}
+
+.candidate-social-media h1 {
+    display: flex;
+    font-size: 23px;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #1967bbaf;
+    margin: 10% 0 0 0;
+}
+
+.candidate-social-media-links {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+.candidate-social-media-facebook {
+    display: flex;
+    padding-left: 2%;
+    padding-right: 1%;
+}
+
+.candidate-social-media-facebook img {
+    display: flex;
+    width: 80%;
+    border-radius: 25px;
+}
+
+.candidate-social-media-facebook img:hover {
+    box-shadow: 2px gray;
+    filter: grayscale();
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -o-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+    -webkit-transition: all 0.6s;
+    -moz-transition: all 0.6;
+    -o-transition: all 0.6;
+    transition: all 0.6;
+}
+
+
+.candidate-social-media-facebook a {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.candidate-social-media-telegram {
+    display: flex;
+    padding-right: 50%;
+    padding-left: 1%;
+}
+
+.candidate-social-media-telegram img {
+    display: flex;
+    width: 45%;
+}
+
+.candidate-social-media-telegram img:hover {
+    box-shadow: 2px;
+    color: orange;
+    filter: grayscale();
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -o-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+    -webkit-transition: all 0.6s;
+    -moz-transition: all 0.6;
+    -o-transition: all 0.6;
+    transition: all 0.6;
+}
+
+.candidate-social-media-telegram a {
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+.experience-skills {
+    display: flex;
+    flex-direction: column;
+    padding: 3.5% 2% 0 5%;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.candidate-experience {
+    display: flex;
+    flex-direction: column;
+}
+
+.candidate-experience h1 {
+    display: flex;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #1967bbaf;
+    margin: 0 0 2% 0;
+}
+
+.candidate-work-experience {
+    display: flex;
+    flex-direction: column;
+}
+
+.candidate-current-job {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.candidate-current-job-name {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    padding-right: 5%;
+    text-align: left;
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.candidate-current-job .candidate-current-job-name h3 {
+    display: flex;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 4%;
+    padding-bottom: 5%;
+}
+
+.candidate-current-job-name p {
+    display: flex;
+    font-size: 19px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.candidate-current-job-description {
+    display: flex;
+    flex-direction: column;
+    width: 64%;
+}
+
+.candidate-current-job-description h3 {
+    display: flex;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.candidate-current-job-description p {
+    display: flex;
+    font-size: 19px;
+    font-weight: 400;
+    margin: 0;
+    padding-bottom: 2%;
+    padding-right: 6%;
+    text-align: justify;
+}
+
+.candidate-previous-job {
+    display: flex;
+    flex-direction: row;
+    margin: 1% 0 0 0;
+}
+
+.candidate-previous-job-name {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    padding-right: 5%;
+}
+
+.candidate-previous-job-name h3 {
+    display: flex;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 10%;
+    margin-bottom: 4%;
+    padding-bottom: 5%;
+}
+
+.candidate-previous-job-name p {
+    display: flex;
+    font-size: 19px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.candidate-previous-job-description {
+    display: flex;
+    flex-direction: column;
+    width: 64%;
+}
+
+.candidate-previous-job-description h3 {
+    display: flex;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.candidate-previous-job-description p {
+    display: flex;
+    font-size: 19px;
+    font-weight: 400;
+    margin: 0;
+    padding-right: 6%;
+    text-align: justify;
+}
+
+.candidate-skills {
+    display: flex;
+    flex-direction: row;
+}
+
+.candidate-programming-skills {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    padding-right: 0;
+}
+
+.candidate-programming-skills h1 {
+    display: flex;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: #1967bbaf;
+}
+
+.candidate-programming-skills-html {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 7%;
+}
+.candidate-programming-skills-html h3 {
+    display: flex;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 23px;
+    font-weight: 400;
+    margin-top: 3%;
+    margin-bottom: 0;
+}
+
+.candidate-programming-skills-icons-html {
+    display: flex;
+    flex-direction: row;
+}
+
+.candidate-programming-skills-icons-html img {
+    display: flex;
+    width: 7.5%;
+    padding-right: 1.5%;
+    padding-top: 0;
+    margin-bottom: 0;
+}
+
+.candidate-programming-skills-css {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 6%;
+}
+
+.candidate-programming-skills-icons-css {
+    display: flex;
+    flex-direction: row;
+}
+
+.candidate-programming-skills-css h3 {
+    display: flex;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 23px;
+    font-weight: 400;
+    margin-top: 6%;
+    margin-bottom: 0%;
+}
+
+.candidate-programming-skills-icons-css img {
+    display: flex;
+    width: 7.5%;
+    padding-right: 1.5%;
+    padding-top: 0%;
+}
+
+.candidate-programming-skills-js {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 7%;
+}
+
+.candidate-programming-skills-icons-js {
+    display: flex;
+    flex-direction: row;
+}
+
+.candidate-programming-skills-js h3 {
+    display: flex;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 23px;
+    font-weight: 400;
+    margin-top: 6%;
+    margin-bottom: 0%;
+}
+
+.candidate-programming-skills-icons-js img {
+    display: flex;
+    width: 7.5%;
+    padding-right: 1.5%;
+    padding-top: 0%;
+}
+
+.candidate-skills .candidate-language-skills {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin-top: 7%;
+    padding-right: 48%;
+}
+
+.candidate-language-skills h1 {
+    display: flex;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: #1967bbaf;
+    /* margin: 0; */
+    margin: 3% 0 2% 0;
+}
+
+.candidate-skills .candidate-language-skills .languages {
+    display: flex;
+    flex-direction: column;
+}
+
+.languages .language-eng {
+    display: flex;
+    flex-direction: column;
+    margin-top: 12%;
+}
+
+.candidate-skills .candidate-language-skills .language-eng h3 {
+    display: flex;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 23px;
+    font-weight: 500;
+    margin-top: 6%;
+    margin-bottom: 0;
+    padding-bottom: 1;
+}
+
+.candidate-language-skills-eng-icons {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2%;
+    margin-right: 1%;
+}
+
+.candidate-language-skills-eng-icons img {
+    display: flex;
+    width: 25%;
+    height: 25%;
+    padding-right: 1%;
+    padding-bottom: 2%;
+    padding-top: 0;
+}
+
+.candidate-skills .candidate-language-skills .language-eng p {
+    display: flex;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
+    padding-bottom: 10%;
+    padding-right: 6%;
+}
+
+.languages .language-ukr {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3%;
+}
+
+.candidate-skills .candidate-language-skills .language-ukr h3 {
+    display: flex;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 23px;
+    font-weight: 500;
+    margin-top: 12%;
+    margin-bottom: 0;
+    padding-bottom: 1;
+}
+
+.candidate-language-skills-ukr-icons {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2%;
+}
+
+.candidate-language-skills-ukr-icons img {
+    display: flex;
+    width: 4%;
+    padding-right: 0.5%;
+    padding-bottom: 2%;
+    padding-top: 0;
+}
+
+.candidate-skills .candidate-language-skills .language-ukr p {
+    display: flex;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
+    padding-bottom: 5%;
+}
+
+.languages .language-rus {
+    display: flex;
+    flex-direction: column;
+}
+
+.candidate-skills .candidate-language-skills .language-rus h3 {
+    display: flex;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 23px;
+    font-weight: 500;
+    margin-top: 12%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.candidate-language-skills-rus-icons {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2%;
+}
+
+.candidate-language-skills-rus-icons img {
+    display: flex;
+    width: 4%;
+    padding-right: 0.5%;
+    padding-bottom: 2%;
+    padding-top: 0;
+}
+
+.candidate-skills .candidate-language-skills .language-rus p {
+    display: flex;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
+    padding-bottom: 5%;
+}
+
+footer {
+    display: inline-block;
+    width: 100%;
+    height: 20px;
+    background-color: #e1e1e189;
+    flex-shrink: 0;
+    padding: 0;
+    margin: 0;
+}
